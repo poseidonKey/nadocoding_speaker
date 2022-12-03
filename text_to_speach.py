@@ -19,11 +19,13 @@ from playsound import playsound
 
 # playsound(sound=file_name)
 
-with open("sample_ko.txt","r",encoding="utf8") as f:
-  text=f.read()
+with open("sample.txt", "r", encoding="utf8") as f:
+    text = f.read()
 
-file_name="sample_ko_file.mp3"
-tts_en=gTTS(text=text,lang="ko")
+file_name = "sample_ko_file.mp3"
+tts_en = gTTS(text=text, lang="ko", slow=False) # slow 세부 변화 없음.
+# 아래 사이트 참고
+# https://scribblinganything.tistory.com/522?category=918711
 tts_en.save(file_name)
 
 playsound(sound=file_name)
