@@ -1,0 +1,13 @@
+1. 가상환경 + TTS
+(윈도우)
+python -m venv myenv
+.\myenv\Scripts\activate
+
+pip install gTTS
+pip install playsound==1.2.2
+
+
+2. STT
+(윈도우)
+pip install SpeechRecognition
+Pip install PyAudio
